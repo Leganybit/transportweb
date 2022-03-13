@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Main{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="../static/main.css"/>
+{% endblock %}
+{% block content %}
+
+
+  <div class="header-container">
+
+    <div class="header">
+      <div class="header-left">
+        <div class="header-left-text">Ante la necesidad:</div>
+      </div>
+      <div class="header-right">
+        <div class="header-right-title">Precios claros</div>
+        <div class="header-right-text">Transportes urgentes</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="calculator-container">
+
+    <div class="calculator">
+      <div class="dropdown">
+        <span class="dropdown-button">Escoja furgoneta</span>
+          <div class="dropdown-content">
+            <ul>
+              <li><input type="checkbox" id="demo" /><a href="">Pequeña</a></li>
+              <li><input type="checkbox" id="demo" /><a href="">Mediana</a></li>
+              <li><input type="checkbox" id="demo" /><a href="">Grande</a></li>
+            </ul>
+            <button onclick="getValue()">Escoja furgoneta</button>
+          </div>
+      </div>
+      <br>
+      <div class="input-km">
+        <form id="form-km">
+          Km totales del viaje: <input type="number" id="km" />
+          <button onclick="myFunction()">Enviar</button>
+        </form>
+      </div>
+      
+      <script type="text/javascript">
+      function myFunction() {
+        alert(document.getElementById("km").value);
+      }
+      </script>
+
+      <!--
+      <script type="text/javascript">
+        function getValue() {
+          alert(document.getElementById("demo").checked)
+        }
+      </script>
+    -->
+    </div>
+    
+  </div>
+
+
+{% endblock %}

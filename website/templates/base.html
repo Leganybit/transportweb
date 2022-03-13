@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <meta charset='utf-8'>
+
+    <title>{% block title %}Transport_web{% endblock %}</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="../static/webcss.css/">
+</head>
+
+<body>
+  <div class="menu-container">
+    <div class="menu">
+      <div class="Logo">Logo</div>
+      <div class="transportes_urgentes">Transportes urgentes</div>
+    </div>
+  </div>
+
+  {% block content %}{% endblock %}
+</body>
+
+</html>
