@@ -1,0 +1,25 @@
+.price-container {
+	display: flex;
+	justify-content: center;
+
+}
+.price-block {
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.set-price {
+	background-color: lightgray;
+	border: solid black 2px;
+	padding: 50px;
+	margin: 10px;
+	font-size: 25px;
+	justify-content: center;
+	align-items: center;
+}
+.insert {
+	float: right;
+}
+

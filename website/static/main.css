@@ -1,14 +1,18 @@
 .header-container {
 	display: flex;
 	justify-content: center;
-	border: 1px solid black;	
+	border: 1px solid black;
+	padding: 20px;	
 }
 .header {
 	width: 1200px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .header-left {
+	height: 150px;
 	width: 580px;
 	border: 1px solid black;
 	margin: 10px;
@@ -22,8 +26,24 @@
 	font-size: 30px;
 	font-family: sans-serif;
 }
+.header-left2 {
+	height: 150px;
+	width: 580px;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	background-color: lightgray;
+}
+.header-left-text2 {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: sans-serif;
+}
 
 .header-right {
+	height: 150px;
 	width: 580px;
 	border: 1px solid black;
 	margin: 10px;
@@ -41,30 +61,35 @@
 .header-right-text {
 	font-family: sans-serif;
 }
+.header-right2 {
+	height: 150px;
+	width: 580px;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	background-color: gray;
+	flex-direction: column;
+}
+.header-right-title2 {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+.header-right-text2 {
+	font-family: sans-serif;
+}
 
 
 
 .calculator-container {
 	display: flex;
 	justify-content: center;
-	border: 1px solid black;
 }
 .calculator {
 	width: 1200px;
 	display: flex;
 	justify-content: center;
-	border: 1px solid black;
-}
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-.dropdown-button {
-}
-.dropdown-content {
-	position: absolute;
-	display: none;
-}
-.dropdown:hover > .dropdown-content {
-	display: block;
+	padding: 50px;
 }

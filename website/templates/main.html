@@ -17,6 +17,14 @@
         <div class="header-right-title">Precios claros</div>
         <div class="header-right-text">Transportes urgentes</div>
       </div>
+
+      <div class="header-left2">
+        <div class="header-left-text2">Para transportar:</div>
+      </div>
+      <div class="header-right2">
+        <div class="header-right-title2">Seguridad, calidad</div>
+        <div class="header-right-text2">A nivel nacional</div>
+      </div>
     </div>
 
   </div>
@@ -24,38 +32,21 @@
   <div class="calculator-container">
 
     <div class="calculator">
-      <div class="dropdown">
-        <span class="dropdown-button">Escoja furgoneta</span>
-          <div class="dropdown-content">
-            <ul>
-              <li><input type="checkbox" id="demo" /><a href="">Pequeña</a></li>
-              <li><input type="checkbox" id="demo" /><a href="">Mediana</a></li>
-              <li><input type="checkbox" id="demo" /><a href="">Grande</a></li>
-            </ul>
-            <button onclick="getValue()">Escoja furgoneta</button>
-          </div>
-      </div>
-      <br>
       <div class="input-km">
-        <form id="form-km">
-          Km totales del viaje: <input type="number" id="km" />
-          <button onclick="myFunction()">Enviar</button>
-        </form>
-      </div>
-      
-      <script type="text/javascript">
-      function myFunction() {
-        alert(document.getElementById("km").value);
-      }
-      </script>
 
-      <!--
-      <script type="text/javascript">
-        function getValue() {
-          alert(document.getElementById("demo").checked)
-        }
-      </script>
-    -->
+        <form action="price" method="post">
+          <!--<ul>
+            {% for item in furgonetas %}
+              <li><input type="radio" id="{{item}}" value="" name="vehicle" /><label>{{item}}</label></li>
+            {% endfor %}
+          </ul>-->
+
+          <h3>Indique Km hasta destino:</h3> <input type="number" id="km" name="km" value="" />
+          <a href="/price" target="_blank"><input class="button" type="submit" value="Calcule su precio"></a>
+        </form>
+
+      </div>
+
     </div>
     
   </div>
