@@ -23,3 +23,18 @@
 	float: right;
 }
 
+.volver-container {
+	display: flex;
+	justify-content: center;
+}
+.div-volver {
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.volver {
+	width: 40px;	
+	height: 20px;
+}
