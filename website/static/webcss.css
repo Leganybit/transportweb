@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	background-image: linear-gradient(white, lightgray, black);
+}
 
 .menu-container {
 	color: black;
@@ -21,11 +24,12 @@
 }
 
 footer {
-	background-color: lightgray;
+	background-image: linear-gradient(black, lightgray);
 	position: fixed;
 	width: 100%;
 	height: 10%;
 	text-align: center;
 	font: bold;
 	font-size: 20px;
+	color: white;
 }
