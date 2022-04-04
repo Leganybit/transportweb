@@ -3,6 +3,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="../static/price.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/main.css"/>
 {% endblock %}
 {% block content %}
 
@@ -33,7 +34,44 @@
   </div>
   <div class="volver-container">
     <div class="div-volver">
-      <a class="volver" href="/" ><input class="button" type="submit" value="Volver"></a>
+      <a class="volver" href="/" ><button><h3>Volver</h3></button></a>
     </div>
+  </div>
+
+<div class="box-container">
+    <div class="box-of-boxes">
+
+      <div class="big-box">
+        <h3 class="big-box-text">Reserve llamando al:</h3>
+        <div class="small-box">
+          <p class="small-box-text">
+          <p>663 56 46 53</p>
+          o
+          <p>648 03 11 78</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box">
+        <h3 class="big-box-text">Disponibilidad:</h3>
+        <div class="small-box">
+          <p class="small-box-text">
+          <p>Llámenos</p>
+          <p>En menos de 24 horas saldrá su envío</p>
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box">
+        <h3 class="big-box-text">Precio fijo desde Madrid</h3>
+        <div class="small-box">
+          <p class="small-box-text">
+          <p>Desde otras comunidades:</p>
+          <p>Se aplican recargos (En breve serán fijos también)</p>
+          </p>
+        </div>
+      </div>
+
+    </div><!--End of box-off-boxex-->
   </div>
 {% endblock %}
