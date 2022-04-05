@@ -4,33 +4,53 @@
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="../static/price.css"/>
     <link rel="stylesheet" type="text/css" href="../static/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../templates/variables.html"/>
+
 {% endblock %}
 {% block content %}
-
+<!--_________Variables generales de la formula______-->
+{% set km=km|int%}
+{% set priceGas= 2 %}
+<!--_________Variables furgoneta pequeña______-->
+{% set consumoP= 7 %}
+{% set horaInicioP= 2 %} <!--Estas horas son la de sumar una hora de carga y otra de descarga-->
+{% set priceHoraP=10 %}
+<!--_________Variables furgoneta mediana______-->
+{% set consumoM= 11 %}
+{% set horaInicioM= 2 %}
+{% set priceHoraM=14 %}
+<!--_________Variables furgoneta grande______-->
+{% set consumoG= 15 %}
+{% set horaInicioG= 4 %}<!--En la grande, las horas de carga y descarga son 2, por ende la suma es 4-->
+{% set priceHoraG=18 %}
 
   <div class="price-container">
     <div class="price-block">
       <div class="set-price">
         <p>
           <h2>Furgoneta <strong>pequeña</strong>:</h2>
-        <spam>{{(2 *(2*(2*(km | int /100) * 7))+ (2 * 10 )+(10*(km|int/200)*(10/4))+((2*(km | int /100 * 7))+10 +(1/3*km|int/100)*10))|int}}€</spam>
+        <spam>{{(2 *(priceGas*(2*(km /100) * consumoP))+ (horaInicioP * priceHoraP )+(priceHoraP*(km/200)*(priceHoraP/4))+((priceGas*(km/100 * consumoP))+priceHoraP +(1/3*km/100)*priceHoraP))|int}}€</spam>
         </p>
       </div>
       <div class="set-price">
         <p>
         <h2>Furgoneta <strong>mediana</strong>:</h2>
-        <spam>{{(2 *(2*(2*(km | int /100) * 11))+ (2 * 13 )+(13*(km|int/200)*(13/4))+((2*(km | int /100 * 11))+10 +(1/3*km|int/100)*13))|int}}€</spam>
+        <spam>{{(2 *(priceGas*(2*(km /100) * consumoM))+ (horaInicioM * priceHoraM )+(priceHoraM*(km/200)*(priceHoraM/4))+((priceGas*(km/100 * consumoM))+priceHoraM +(1/3*km/100)*priceHoraM))|int}}€
+          <!--{{(2 *(2*(2*(km | int /100) * 11))+ (2 * 13 )+(13*(km|int/200)*(13/4))+((2*(km | int /100 * 11))+10 +(1/3*km|int/100)*13))|int}}€-->
+        </spam>
         </p>
       </div>
 
       <div class="set-price">
         <p>
         <h2>Furgoneta <strong>grande</strong>:</h2>
-        <spam>{{(2 *(2*(2*(km | int /100) * 15))+ (2 * 17 )+(15*(km|int/200)*(17/3))+((2*(km | int /100 * 15))+10 +(1/3*km|int/100)*15))|int}}€</spam>
+        <spam>{{(2 *(priceGas*(2*(km /100) * consumoG))+ (horaInicioG * priceHoraG )+(priceHoraG*(km/200)*(priceHoraG/4))+((priceGas*(km/100 * consumoG))+priceHoraG +(1/3*km/100)*priceHoraG))|int}}€
+        <!--{{(2 *(2*(2*(km | int /100) * 15))+ (2 * 17 )+(15*(km|int/200)*(17/3))+((2*(km | int /100 * 15))+10 +(1/3*km|int/100)*15))|int}}€-->
+        </spam>
         </p>
       </div>
     </div>
-    
+
   </div>
   <div class="volver-container">
     <div class="div-volver">

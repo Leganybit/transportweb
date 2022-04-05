@@ -18,12 +18,11 @@
 .header-left {
 	height: 150px;
 	width: 580px;
-	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 50px;
 	display: flex;
 	justify-content: center;
-	background-image: linear-gradient(lightgray, gray);
+	background-image: linear-gradient(white, lightgray, gray);
 }
 .header-left-text {
 	font-weight: bold;
@@ -33,7 +32,6 @@
 .header-left2 {
 	height: 150px;
 	width: 580px;
-	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 50px;
 	display: flex;
@@ -49,12 +47,11 @@
 .header-right {
 	height: 150px;
 	width: 580px;
-	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 50px;
 	display: flex;
 	align-items: center;
-	background-image: linear-gradient(lightgray, gray);
+	background-image: linear-gradient(white, lightgray, gray);
 	flex-direction: column;
 }
 .header-right-title {
@@ -68,7 +65,6 @@
 .header-right2 {
 	height: 150px;
 	width: 580px;
-	border: 1px solid lightgray;
 	margin: 10px;
 	padding: 50px;
 	display: flex;
@@ -129,14 +125,13 @@ form {
 	margin-bottom: 20px;
 }
 .big-box {
-	border: solid lightgray; 2px;
 	width: 300px;
 	height: 200px;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient(lightgray ,darkgray, gray);
+	background-image: linear-gradient(lightgray, darkgray, gray);
 }
 .small-box {
 	border-top: solid black 1px;

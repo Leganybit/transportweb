@@ -18,7 +18,6 @@
 }
 .set-price {
 	background-image: linear-gradient(lightgray, lightgray, gray);
-	border: solid black 2px;
 	padding: 50px;
 	margin: 10px;
 	font-size: 25px;
