@@ -7,9 +7,13 @@ def create_app():
 	def main():
 		return render_template("/main.html")
 
-	@app.route("/price", methods=['GET', 'POST'])
+	@app.route("/price")
 	def price():
-		return render_template("/price.html", km=request.form["km"])
+		return render_template("/price.html")
+
+	'''@app.route("/price", methods=['GET', 'POST'])
+	def price():
+		return render_template("/price.html", km=request.form["km"])'''
 
 	return app
 

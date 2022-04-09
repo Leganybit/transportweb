@@ -19,31 +19,35 @@
       </div>
 
       <div class="header-left2">
-        <div class="header-left-text2">Para transportar:</div>
+        <div id="fp" class="header-left-title2">Para transportar:</div>
+        <p id="precioP"></p>
       </div>
       <div class="header-right2">
-        <div class="header-right-title2">Vehículos disponibles</div>
-        <div class="header-right-text2">Furgoneta pequeña, mediana y grande</div>
+        <div id="fm" class="header-right-title2">Vehículos disponibles</div>
+        <div id="precioM" class="header-right-text2">Furgoneta pequeña Y mediana</div>
       </div>
     </div>
 
   </div>
+
+
+
 
   <div class="calculator-container">
 
     <div class="calculator">
       <div class="input-km">
 
-        <form action="price" method="post">
+        <div class="form">
           <!--<ul>
             {% for item in furgonetas %}
               <li><input type="radio" id="{{item}}" value="" name="vehicle" /><label>{{item}}</label></li>
             {% endfor %}
           </ul>-->
 
-          <h3>Indique Km hasta destino:</h3> <input style="margin-top: 5px;" type="number" id="km" name="km" value="" />
-          <a href="/price" target="_blank"><button><h3>Calcule su precio</h3></button></a>
-        </form>
+          <h3>Indique Km hasta destino:</h3> <input id="input-km" type="number" style="margin-top: 5px;"/>
+          <button><h3>Calcule su precio</h3></button>
+        </div>
 
       </div>
     </div>
@@ -85,6 +89,8 @@
 
     </div><!--End of box-off-boxex-->
   </div>
-
+<!--_______Inserto javascript_________-->
+  <script src="static/js.js">
+  </script>
 {% endblock %}
 

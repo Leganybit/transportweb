@@ -24,23 +24,6 @@
 {% set horaInicioG= 4 %}<!--En la grande, las horas de carga y descarga son 2, por ende la suma es 4-->
 {% set priceHoraG=18 %}
 
-  <input id="input-test" type="number" name="">
-  <p id="mostrarResultado">Aquí va el número</p>
-  <button onclick="suma">Sumar</button>
-
-  <script type="text/javascript">
-   
-      var numberInput = document.getElementById("input-test")
-
-      numberInput.addEventListener("change", function(){
-        var val= document.getElementById("input-test").value;
-        var cambio = parseInt(val)
-        var suma = cambio + 5;
-        document.getElementById("mostrarResultado").innerHTML = suma;
-      });
- 
-  </script>
-
   <div class="price-container">
     <div class="price-block">
       <div class="set-price">
