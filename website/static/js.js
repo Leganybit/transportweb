@@ -22,10 +22,13 @@ numberInput.addEventListener("change", function(){
 	(priceHoraP*(km/200)*(priceHoraP/4))+
 	((priceGas*(km/100 * consumoP))+
 	priceHoraP +(1/3*km/100)*priceHoraP)));
+	precioP = precioP + "€"
+
 
 	var precioM = parseInt((2 *(priceGas*(2*(km /100) * consumoM))+
 	(horaInicioM * priceHoraM )+(priceHoraM*(km/200)*(priceHoraM/4))+
 	((priceGas*(km/100 * consumoM))+priceHoraM +(1/3*km/100)*priceHoraM)));
+	precioM = precioM +"€"
 
 	/*var precioG = parseInt((2 *(priceGas*(2*(km /100) * consumoG))+
 	(horaInicioG * priceHoraG )+(priceHoraG*(km/200)*(priceHoraG/4))+
