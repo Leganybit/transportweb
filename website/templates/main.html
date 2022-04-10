@@ -3,12 +3,14 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="../static/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/calculator.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/box.css"/>
 {% endblock %}
 {% block content %}
 
 
   <div class="header-container">
-
     <div class="header">
       <div class="header-left">
         <div class="header-left-text">Ante la necesidad:</div>
@@ -19,12 +21,12 @@
       </div>
 
       <div class="header-left2">
-        <div id="fp" class="header-left-title2">Para transportar:</div>
-        <p id="precioP"></p>
+        <div class="header-left-title2">Para transportar:</div>
+        <p></p>
       </div>
       <div class="header-right2">
-        <div id="fm" class="header-right-title2">Vehículos disponibles</div>
-        <div id="precioM" class="header-right-text2">Furgoneta pequeña Y mediana</div>
+        <div class="header-right-title2">Vehículos disponibles</div>
+        <div class="header-right-text2">Furgoneta pequeña Y mediana</div>
       </div>
     </div>
 
@@ -34,10 +36,16 @@
 
 
   <div class="calculator-container">
-
-    <div class="calculator">
+    <div id="calculadora" class="calculator">
+      <div class="calculator-left">
+        <div id="fp" class="calculator-left-title">
+        <!--aquí título izquierdo-->     
+        </div>
+        <div id="precioP" class="calculator-left-text">
+        <!--aquí texto izquierdo -->      
+        </div>      
+      </div>
       <div class="input-km">
-
         <div class="form">
           <!--<ul>
             {% for item in furgonetas %}
@@ -48,7 +56,14 @@
           <h3>Indique Km hasta destino:</h3> <input id="input-km" type="number" style="margin-top: 5px;"/>
           <button><h3>Calcule su precio</h3></button>
         </div>
-
+      </div>
+      <div class="calculator-right">
+        <div id="fm" class="calculator-right-title"> 
+        <!--aquí titulo dereccho-->      
+        </div>
+        <div id="precioM" class="calculator-right-text"> 
+        <!--aquí texto derecha -->     
+        </div>     
       </div>
     </div>
   </div>
