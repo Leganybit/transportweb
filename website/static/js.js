@@ -35,8 +35,8 @@ numberInput.addEventListener("change", function(){
 	((priceGas*(km/100 * consumoG))+priceHoraG +(1/3*km/100)*priceHoraG)));*/
 
     document.getElementById("precioP").innerHTML = precioP;
-    document.getElementById("fp").innerHTML = "Precio por la pequeña:";
-    document.getElementById("fm").innerHTML = "Precio por la mediana:";
+    /*document.getElementById("fp").innerHTML = "Precio por la pequeña:";
+    document.getElementById("fm").innerHTML = "Precio por la mediana:";*/
     document.getElementById("precioM").innerHTML = precioM;
 });
 
