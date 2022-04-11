@@ -1,21 +1,20 @@
 .header-container {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
-	margin-top: 10%;
-	margin-bottom: 15%;
+	margin-top: 20%;
+	margin-bottom: 25%;
 }
 .header {
-	width: 1200px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 .header-left {
 	height: 150px;
-	width: 580px;
-	margin: 10px;
+	width: 500px;
 	padding: 50px;
 	display: flex;
 	justify-content: center;
@@ -28,8 +27,7 @@
 }
 .header-left2 {
 	height: 150px;
-	width: 580px;
-	margin: 10px;
+	width: 500px;
 	padding: 50px;
 	display: flex;
 	justify-content: center;
@@ -49,8 +47,7 @@
 
 .header-right {
 	height: 150px;
-	width: 580px;
-	margin: 10px;
+	width: 500px;
 	padding: 50px;
 	display: flex;
 	align-items: center;
@@ -68,8 +65,7 @@
 }
 .header-right2 {
 	height: 150px;
-	width: 580px;
-	margin: 10px;
+	width: 500px;
 	padding: 50px;
 	display: flex;
 	align-items: center;

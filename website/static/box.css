@@ -3,15 +3,17 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 }
 .box-of-boxes {
 	width: 1200px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 .big-box {
 	width: 300px;
@@ -36,20 +38,4 @@
 .small-box-text {
 	padding-top: 20px;
 	font-size: 20px;
-}
-
-.volver-container {
-	display: flex;
-	justify-content: center;
-}
-.div-volver {
-	width: 1200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-}
-.volver /*Parece que no sirve este*/{
-	margin-bottom: 20px;
-	font-size: 15px;
 }

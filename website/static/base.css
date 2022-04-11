@@ -6,7 +6,16 @@
 body {
 	background-color: whitesmoke;
 }
-
+.container-of-containers {
+	display: flex ;
+	justify-content: center;
+	/*background-image: linear-gradient(to right, rgb(153, 204, 255), whitesmoke 5%, whitesmoke 95%, rgb(153, 204, 255));*/
+	background: radial-gradient(whitesmoke 83%, rgb(153, 204, 255));
+}
+.container {
+	width: 1200px;
+	background-color: whitesmoke;
+}
 .menu-container {
 	color: black;
 	background-color: rgb(239, 21, 21);

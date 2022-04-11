@@ -4,7 +4,6 @@
 	margin-bottom: 5%;
 }
 .calculator {
-	width: 1200px;
 	display: flex;
 	justify-content: center;
 	background-image: linear-gradient(to right, whitesmoke, rgb(153, 204, 255), whitesmoke);

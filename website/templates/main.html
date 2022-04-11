@@ -4,8 +4,14 @@
     {{ super() }}
     <link rel="stylesheet" type="text/css" href="../static/main.css"/>
     <link rel="stylesheet" type="text/css" href="../static/header.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/header-tablet.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/header-movile.css"/>
     <link rel="stylesheet" type="text/css" href="../static/calculator.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/calculator-tablet.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/calculator-movile.css"/>
     <link rel="stylesheet" type="text/css" href="../static/box.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/box-tablet.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/box-movile.css"/>
 {% endblock %}
 {% block content %}
 
@@ -67,7 +73,7 @@
           </div>     
         </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -96,7 +102,7 @@
       </div>
 
       <div class="big-box">
-        <h3 class="big-box-text">Precio fijo desde Madrid</h3>
+        <h3 class="big-box-text">Precio fijo desde o hasta Madrid</h3>
         <div class="small-box">
           <p class="small-box-text">
           <p>Desde otras comunidades:</p>
@@ -107,8 +113,12 @@
 
     </div><!--End of box-off-boxex-->
   </div>
+
 <!--_______Inserto javascript_________-->
   <script src="static/js.js">
   </script>
 {% endblock %}
 
+{% block footer %}
+    {{ super() }}
+{% endblock %}

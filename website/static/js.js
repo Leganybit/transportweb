@@ -24,7 +24,6 @@ numberInput.addEventListener("change", function(){
 	priceHoraP +(1/3*km/100)*priceHoraP)));
 	precioP = precioP + "€"
 
-
 	var precioM = parseInt((2 *(priceGas*(2*(km /100) * consumoM))+
 	(horaInicioM * priceHoraM )+(priceHoraM*(km/200)*(priceHoraM/4))+
 	((priceGas*(km/100 * consumoM))+priceHoraM +(1/3*km/100)*priceHoraM)));
@@ -33,12 +32,18 @@ numberInput.addEventListener("change", function(){
 	/*var precioG = parseInt((2 *(priceGas*(2*(km /100) * consumoG))+
 	(horaInicioG * priceHoraG )+(priceHoraG*(km/200)*(priceHoraG/4))+
 	((priceGas*(km/100 * consumoG))+priceHoraG +(1/3*km/100)*priceHoraG)));*/
-
+	if (km >= 0) {
     document.getElementById("precioP").innerHTML = precioP;
     /*document.getElementById("fp").innerHTML = "Precio por la pequeña:";
     document.getElementById("fm").innerHTML = "Precio por la mediana:";*/
     document.getElementById("precioM").innerHTML = precioM;
+	}
+	else {
+		document.getElementById("precioP").innerHTML = "Error, kilómetro negativo";
+		document.getElementById("precioM").innerHTML = "Error, kilómetro negativo";
+	}
 });
+
 
 
 /*

@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1000px) {
+	.calculator-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5%;
+	}
+	.calculator {
+		display: flex;
+		justify-content: center;
+		background-image: linear-gradient(to right, whitesmoke, rgb(153, 204, 255), whitesmoke);
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	/*______Zona centro calculadora_________*/
+	button {
+		background-color: red;
+		transition-duration: 0.5s;
+		height: 40px;
+		width: 80px;
+		margin-top: 10px;
+		align-self: center;
+	}
+	button:hover {
+		background-color: darkred;
+		color: white;
+	}
+	.input-km {
+		display: flex ;
+		justify-content: center ;
+		text-align: center ;
+		flex-direction: column;
+		width: 20%;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	/*_______Zona baja calculadora donde se pone precio___*/
+	.calculator-resultado {
+		display: flex;
+		justify-content: center ;
+		margin-top: 5%;
+
+	}
+	/*______Zona izquierda calculadora_________*/
+	.calculator-left {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		margin-right: 20%;
+	}
+	.calculator-left-title {
+		font-weight: bold;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.calculator-left-text {
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+	/*______Zona derecha calculadora_________*/
+	.calculator-right {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		margin-left: 20%;
+	}
+	.calculator-right-title {
+		font-weight: bold;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.calculator-right-text {
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+
+}
